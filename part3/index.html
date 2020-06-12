@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>http2web</title>
+</head>
+<style>
+    h1 {
+        font-family: "Comic Sans MS", monospace;
+    }
+</style>
+<body>
+
+<div style="text-align: center; padding-top: 120px">
+    <h1>Hello HTML!</h1>
+
+    <p style="font-style: italic; color: darkblue">HyperText Markup Language</p>
+
+    <p id="counter">VARIABLE</p>
+
+    <button onclick="increment()">Increment</button>
+</div>
+
+
+<script>
+    function increment() {
+        var element = document.getElementById('counter');
+
+        fetch('/increment')
+                .then(response => response.text())
+                .then(text => {
+                    element.innerText = text;
+                })
+    }
+</script>
+
+</body>
+</html>
