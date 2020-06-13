@@ -20,7 +20,7 @@
         },
         methods: {
             init: function () {
-                fetch('/state')
+                fetch('/api/state')
                         .then(response => response.text())
                         .then(text => {
                             this.counter = text;
@@ -28,7 +28,7 @@
                         })
             },
             increment: function () {
-                fetch('/increment')
+                fetch('/api/increment')
                         .then(response => response.text())
                         .then(text => {
                             this.counter = text;

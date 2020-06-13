@@ -3,6 +3,8 @@ import App from './App.vue'
 
 document.title = 'http2web'
 
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
+let vue = new Vue({
+    render: h => h(App),
+});
+
+vue.$mount('#app')

@@ -2,7 +2,7 @@
     <div id="app">
         <h1>Hello HTML!</h1>
 
-        <p style="font-style: italic; color: darkblue">{{ description }}</p>
+        <p class="description">{{ description }}</p>
 
         <Counter/>
     </div>
@@ -36,5 +36,10 @@
     h1 {
         font-family: "Comic Sans MS", monospace;
         color: darkblue;
+    }
+
+    p.description {
+        font-style: italic;
+        color: darkblue
     }
 </style>
