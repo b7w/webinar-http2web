@@ -23,15 +23,15 @@
 
 <script>
     function init() {
-        var element = document.getElementById('counter');
-        var element2 = document.getElementById('increment');
+        var elementCounter = document.getElementById('counter');
+        var elementIncrement = document.getElementById('increment');
 
         fetch('/state')
                 .then(response => response.text())
                 .then(text => {
-                    element.innerText = text;
-                    element.style.visibility = 'visible';
-                    element2.style.visibility = 'visible';
+                    elementCounter.innerText = text;
+                    elementCounter.style.visibility = 'visible';
+                    elementIncrement.style.visibility = 'visible';
                 })
     }
 
@@ -43,7 +43,7 @@
         fetch('/increment')
                 .then(response => response.text())
                 .then(text => {
-                    element.innerText = text;
+                    elementCounter.innerText = text;
                 })
     }
 </script>
