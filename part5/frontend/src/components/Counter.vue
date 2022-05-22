@@ -20,7 +20,7 @@
         },
         methods: {
             init: function () {
-                fetch('/api/state')
+                fetch('/api/counter')
                         .then(response => response.text())
                         .then(text => {
                             this.counter = text;

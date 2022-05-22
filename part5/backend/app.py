@@ -7,7 +7,7 @@ app = Flask('http2web')
 app.counter = 0
 
 
-@app.route('/state')
+@app.route('/counter')
 def state():
     time.sleep(1)
     return str(app.counter)
@@ -20,4 +20,4 @@ def increment():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port='5000')
+    app.run(host='0.0.0.0', port=9000)

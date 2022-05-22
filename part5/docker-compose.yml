@@ -3,7 +3,7 @@ services:
   proxy:
     image: 'nginx:alpine'
     ports:
-      - 8080:8080
+      - '8080:8080'
     volumes:
       - ./frontend/dist:/frontend/dist:ro
       - ./backend/nginx.conf:/etc/nginx/nginx.conf:ro
