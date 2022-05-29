@@ -38,7 +38,7 @@
     init()
 
     function increment() {
-        var element = document.getElementById('counter');
+        var elementCounter = document.getElementById('counter');
 
         fetch('/increment')
                 .then(response => response.text())

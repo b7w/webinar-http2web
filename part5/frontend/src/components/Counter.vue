@@ -1,8 +1,8 @@
 <template>
     <div>
-        <p v-show="loading == false">{{ counter }}</p>
+        <p v-show="loading === false">{{ counter }}</p>
 
-        <button v-show="loading == false" v-on:click="increment()">Increment</button>
+        <button v-show="loading === false" v-on:click="increment()">Increment</button>
     </div>
 </template>
 
